@@ -1,0 +1,241 @@
+{
+  "main": {
+    "id": "833d2c12e2212407",
+    "type": "split",
+    "children": [
+      {
+        "id": "e179d553643eb7fd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "445d4abf87691748",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SPRING AND SPRING BOOT/Spring.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Spring"
+            }
+          },
+          {
+            "id": "bcf875a74619dc2d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "JAVA/JAVA OOPS/FILE INPUT AND OUTPUT AND MULTITHREADING.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "FILE INPUT AND OUTPUT AND MULTITHREADING"
+            }
+          },
+          {
+            "id": "5ae2ce96750cc751",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SPRING AND SPRING BOOT/Spring.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Spring"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "daa047001a0f7673",
+    "type": "split",
+    "children": [
+      {
+        "id": "8bad5101f8444318",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "17a2303a6d9c534a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "cb1b491a1e4f9352",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "f6f8dc23eaa89794",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "05dbe3fa6e291825",
+    "type": "split",
+    "children": [
+      {
+        "id": "58679b5657db5b95",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a5391b91e760761b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "JAVA/BASICS.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for BASICS"
+            }
+          },
+          {
+            "id": "3418339d737dfef3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "JAVA/BASICS.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from BASICS"
+            }
+          },
+          {
+            "id": "802f36b6ad473174",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "a12828877e8b332d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "JAVA/JAVA OOPS/METHODS.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of METHODS"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "graph:Open graph view": false,
+      "switcher:Open quick switcher": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "5ae2ce96750cc751",
+  "lastOpenFiles": [
+    "JAVA/JAVA OOPS/ENUM&GENERICS.md",
+    "JAVA/JAVA OOPS/FILE INPUT AND OUTPUT AND MULTITHREADING.md",
+    "JAVA/JAVA OOPS/EXCEPTION HANDLING.md",
+    "SPRING AND SPRING BOOT/Spring.md",
+    "GIT AND GITHUB/GIT AND GITHUB.md",
+    "JDBC/JDBC.md",
+    "Project.md",
+    "JAVA/JAVA OOPS/LAMBDA & STREAM API.md",
+    "JAVA/JAVA OOPS/CLONING.md",
+    "GIT AND GITHUB",
+    "SPRING AND SPRING BOOT",
+    "JAVA/JAVA OOPS/OOPS.md",
+    "JAVA/JAVA OOPS/Collection Set and Map and QUEUE.md",
+    "JAVA/JAVA OOPS/COLLECTION FRAMWORK.md",
+    "JAVA/JAVA OOPS/METHODS.md",
+    "JDBC/Pasted image 20250430145838.png",
+    "Pasted image 20250430144956.png",
+    "JDBC",
+    "JDBC.md",
+    "Untitled 1.md",
+    "JDBC",
+    "JAVA/BASICS.md",
+    "JAVA/JAVA OOPS/WRAPPER CLASSES.md",
+    "JAVA/JAVA OOPS/ENUM&GENERICS",
+    "SecureUserLogin/Secure Login System.md",
+    "JAVA",
+    "2025-04-11.md",
+    "Untitled.canvas",
+    "jjjjj.md",
+    "Untitled 1.canvas",
+    "SecureUserLogin",
+    "2025-04-06.md",
+    "Welcome.md",
+    "Web App/Untitled.md",
+    "Web App/Data Type.md",
+    "Web App/---.md",
+    "JAVA/JAVA OOPS"
+  ]
+}
