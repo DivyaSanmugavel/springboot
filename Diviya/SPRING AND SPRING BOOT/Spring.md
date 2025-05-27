@@ -211,14 +211,15 @@ It answers the question: **“How many objects of this class should Spring creat
 
 ## Common Bean Scopes
 
-| Scope Name     | What It Means (Simple)                                            | Where Used      |
-|----------------|-------------------------------------------------------------------|-----------------|
-| singleton      | Only one object is made for the whole application (default)       | Everywhere      |
-| prototype      | A new object is created every time you ask Spring for it          | Everywhere      |
-| request        | One object per HTTP request (web app only)                        | Web apps        |
-| session        | One object per HTTP session (web app only)                        | Web apps        |
-| application    | One object per web application (per ServletContext, web only)     | Web apps        |
-| websocket      | One object per WebSocket connection                               | WebSocket apps  |
+| Scope Name  | What It Means (Simple)                                                        | Where Used     |
+| ----------- | ----------------------------------------------------------------------------- | -------------- |
+| singleton   | Only one object is made for the whole application (default)                   | Everywhere     |
+| prototype   | A new object is created every time you ask Spring for it                      | Everywhere     |
+| request     | One object per HTTP request (web app only)                                    | Web apps       |
+| session     | One object per HTTP session (web app only)                                    | Web apps       |
+| application | One object per web application (not part of ioc,per ServletContext, web only) | Web apps       |
+| websocket   | One object per WebSocket connection                                           | WebSocket apps |
+The **ServletContext** is a **web-level manager** — it’s responsible for the lifecycle of the **entire web application**, including servlet mappings, filters, and other web components.
 
 ---
 
@@ -444,9 +445,16 @@ When to use:
 **Dependency Injection** is a technique where the Spring IoC container injects dependencies into a bean.
 
 ### Types of DI in Spring:
-- **Constructor Injection**
-- **Setter Injection**
-- **Field Injection** (not recommended for testing)
+==**Constructor Injection**==
+- - Required dependencies
+    
+- Testable, clean, and production-level code
+ ==**Setter Injection**==
+- - Optional dependencies
+    
+- Post-construction configuration
+ ==**Field Injection**== (not recommended for testing)
+- Simple cases or quick demos only
 
 **Example: Constructor Injection**
 ```java
@@ -913,3 +921,112 @@ mvn install:install-file -Dfile=path-to-jar -DgroupId=mysql -DartifactId=mysql-c
 ```
 
 ---
+### SPRING MVC 
+```
+Client → Tomcat → DispatcherServlet (Spring) → Controller → Service → View → Tomcat → Client
+
+```
+- **Tomcat** is the container → handles low-level web protocol (HTTP, sockets, etc.)
+    
+-  **DispatcherServlet** is Spring’s brain → decides what to do with the request (MVC routing, business logic, etc.)
+
+- **Tomcat** = Building (provides doors, walls, electricity)
+    
+- **DispatcherServlet** = Receptionist (decides where to send a visitor)
+    
+- **Controller** = Office workers (handle specific tasks)
+
+- **DispatcherServlet** is **Spring's** core for MVC handling.
+    
+- Spring Boot auto-configures `DispatcherServlet` for you — no manual setup needed.
+
+## MVC Pattern
+
+The **MVC pattern** divides the web application into 3 components:
+
+| Layer          | Role                                                                          |
+| -------------- | ----------------------------------------------------------------------------- |
+| **Model**      | Represents data and business logic (e.g., Java classes, services, DB results) |
+| **View**       | The UI shown to the user (e.g., HTML, JSP, Thymeleaf)                         |
+| **Controller** | Handles user requests and links model + view                                  |
+```
+User --> Controller --> Service/Model --> View --> User
+
+```
+
+## 2. Web Controller (`@Controller` or `@RestController`)
+
+- A Java class that handles **web requests**.
+    
+- Uses annotations like `@GetMapping`, `@PostMapping`, etc.
+    
+- Returns view name (in `@Controller`) or JSON response (in `@RestController`).
+```
+@Controller
+public class HomeController {
+
+    @GetMapping("/home")
+    public String showHomePage(Model model) {
+        model.addAttribute("message", "Welcome to Spring MVC!");
+        return "home"; // maps to home.html or home.jsp
+    }
+}
+
+```
+
+## 3. DispatcherServlet
+
+- It's the **front controller** in Spring MVC.
+    
+- Every HTTP request goes through this servlet.
+    
+- It:
+    
+    1. Receives the request
+        
+    2. Finds the right controller
+        
+    3. Executes the method
+        
+    4. Returns view or data to the user
+        
+
+###  Internal Flow:
+
+
+
+`Client → DispatcherServlet → Controller → Model → ViewResolver → View (HTML/JSP)`
+
+Spring Boot auto-registers `DispatcherServlet` — no XML config needed.
+
+
+## 4. View Technologies: JSP vs Thymeleaf
+
+### 📄 JSP (JavaServer Pages)
+
+- Traditional Java-based view.
+```
+<!-- /WEB-INF/views/home.jsp -->
+<html>
+<body>
+  <h1>${message}</h1>
+</body>
+</html>
+
+```
+
+### Thymeleaf (modern template engine)
+View technologies for rendering UI
+- Cleaner, XML/HTML-friendly.
+    
+- Uses `${}` inside `th:*` attributes.
+```
+<!-- home.html in /templates -->
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+  <h1 th:text="${message}">Default Message</h1>
+</body>
+</html>
+
+```

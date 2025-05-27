@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JAVA/JAVA OOPS/FILE INPUT AND OUTPUT AND MULTITHREADING.md",
+                "file": "JAVA/JAVA OOPS/EXCEPTION HANDLING.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FILE INPUT AND OUTPUT AND MULTITHREADING"
+              "title": "EXCEPTION HANDLING"
             }
           },
           {
@@ -41,16 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SPRING AND SPRING BOOT/Spring.md",
+                "file": "JAVA/JAVA OOPS/FILE INPUT AND OUTPUT AND MULTITHREADING.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Spring"
+              "title": "FILE INPUT AND OUTPUT AND MULTITHREADING"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -198,12 +198,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ae2ce96750cc751",
+  "active": "bcf875a74619dc2d",
   "lastOpenFiles": [
-    "JAVA/JAVA OOPS/ENUM&GENERICS.md",
-    "JAVA/JAVA OOPS/FILE INPUT AND OUTPUT AND MULTITHREADING.md",
-    "JAVA/JAVA OOPS/EXCEPTION HANDLING.md",
     "SPRING AND SPRING BOOT/Spring.md",
+    "JAVA/JAVA OOPS/Collection Set and Map and QUEUE.md",
+    "JAVA/JAVA OOPS/COLLECTION FRAMWORK.md",
+    "JAVA/JAVA OOPS/FILE INPUT AND OUTPUT AND MULTITHREADING.md",
+    "JAVA/JAVA OOPS/ENUM&GENERICS.md",
+    "JAVA/JAVA OOPS/EXCEPTION HANDLING.md",
     "GIT AND GITHUB/GIT AND GITHUB.md",
     "JDBC/JDBC.md",
     "Project.md",
@@ -212,8 +214,6 @@
     "GIT AND GITHUB",
     "SPRING AND SPRING BOOT",
     "JAVA/JAVA OOPS/OOPS.md",
-    "JAVA/JAVA OOPS/Collection Set and Map and QUEUE.md",
-    "JAVA/JAVA OOPS/COLLECTION FRAMWORK.md",
     "JAVA/JAVA OOPS/METHODS.md",
     "JDBC/Pasted image 20250430145838.png",
     "Pasted image 20250430144956.png",
